@@ -8,6 +8,8 @@ export default async function ProcessSpec(specUrl, generateMissingTags = false, 
   try {
     let specMeta;
     if (typeof specUrl === 'string') {
+      console.log("AHoj")
+      alert("Ahoj")
       specMeta = await OpenApiParser.resolve({ url: specUrl }); // Swagger(specUrl);
     } else {
       specMeta = await OpenApiParser.resolve({ spec: specUrl }); // Swagger({ spec: specUrl });
